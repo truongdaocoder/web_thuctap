@@ -8,6 +8,26 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Animation */
+
+@keyframes effect_menu {
+    from {
+        top: 75px;
+    }
+    to {
+        top: 51px;
+    }
+}
+
+@keyframes effect_login {
+    from {
+        top: 90px;
+    }
+    to {
+        top: 83px;
+    }
+}
+
 /* Header CSS */
 #header {
     display: flex;
@@ -77,10 +97,22 @@ html {
 }
 .nav > li:hover .sub__nav{
     display: block;
+    animation: .1s effect_menu;
 }
 .sub__T {
     min-width: 150px;
     width: 200px;
+}
+
+.nav .sub__nav::before{
+    content: "";
+    position: absolute;
+    top: -24px;
+    left: 20px;
+    border-top: 12px solid transparent;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #3b3939f1;
 }
 
 /* Search CSS */
@@ -141,6 +173,7 @@ html {
     width: 120px;
     top: 83px;
     right: 0;
+    animation: .1s effect_login;
 }
 .login__nav li {
     padding: 10px;
@@ -154,3 +187,15 @@ html {
 .login .login__icon:hover .login__nav{
     display: block;
 }
+
+.login .login__nav::before{
+    content: "";
+    position: absolute;
+    top: -24px;
+    right: 20px;
+    border-top: 12px solid transparent;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #3b3939f1;
+}
+
