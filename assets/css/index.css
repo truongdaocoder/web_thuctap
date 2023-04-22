@@ -1,201 +1,203 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Animation */
 
 @keyframes effect_menu {
-    from {
-        top: 75px;
-    }
-    to {
-        top: 51px;
-    }
+  from {
+    top: 75px;
+  }
+  to {
+    top: 51px;
+  }
 }
 
 @keyframes effect_login {
-    from {
-        top: 90px;
-    }
-    to {
-        top: 83px;
-    }
+  from {
+    top: 90px;
+  }
+  to {
+    top: 83px;
+  }
 }
 
 /* Header CSS */
 #header {
-    display: flex;
-    width: 100%;
-    height: 83px;
-    background-color: #211f1ff1;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 38px;
+  display: flex;
+  width: 100%;
+  height: 83px;
+  background-color: #211f1ff1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 38px;
 }
 .header__before {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .header__before button {
-    padding: 18px;
-    background-color: rgba(0,0,0,0);
-    color: #c1c1c1;
-    border: none;
+  padding: 18px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #c1c1c1;
+  border: none;
 }
 .header__before button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 .header__before img {
-    margin-left: 16px;
-    width: 14%;
+  margin-left: 16px;
+  width: 14%;
 }
 
 /* Nav CSS */
-.nav { 
-    display: flex;
-    list-style: none;
+.nav {
+  display: flex;
+  list-style: none;
 }
-.nav > li{
-    position: relative;
+.nav > li {
+  position: relative;
 }
-.nav > li > a{
-    padding: 32px 0 32px 24px;
+.nav > li > a {
+  padding: 32px 0 32px 24px;
 }
 .nav li a {
-    color: #c1c1c1;
-    text-decoration: none;
+  color: #c1c1c1;
+  text-decoration: none;
 }
 
 /* Sub-nav CSS */
 .nav li i {
-    color: #c1c1c1;
+  color: #c1c1c1;
 }
 .nav li i:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .nav .sub__nav {
-    display: none;
-    position: absolute;
-    background-color: #211f1ff1;
-    top: 51px;
-    left: 0;
-    min-width: 150px;
+  display: none;
+  position: absolute;
+  background-color: #211f1ff1;
+  top: 51px;
+  left: 0;
+  min-width: 150px;
 }
-.nav .sub__nav li{
-    padding: 8px 20px;
-    list-style: none;
+.nav .sub__nav li {
+  padding: 8px 20px;
+  list-style: none;
 }
-.nav .sub__nav a{
-    font-size: 14px;
+.nav .sub__nav a {
+  font-size: 14px;
 }
-.nav > li:hover .sub__nav{
-    display: block;
-    animation: .1s effect_menu;
+.nav > li:hover .sub__nav {
+  display: block;
+  animation: 0.1s effect_menu;
 }
 .sub__T {
-    min-width: 150px;
-    width: 200px;
+  min-width: 150px;
+  width: 200px;
 }
 
-.nav .sub__nav::before{
-    content: "";
-    position: absolute;
-    top: -24px;
-    left: 20px;
-    border-top: 12px solid transparent;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-bottom: 12px solid #3b3939f1;
+.nav .sub__nav::before {
+  content: "";
+  position: absolute;
+  top: -24px;
+  left: 20px;
+  border-top: 12px solid transparent;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid #3b3939f1;
 }
 
 /* Search CSS */
 .header__affter {
-    display: flex;
+  display: flex;
 }
 
 .search {
-    display: flex;
-    position: relative;
-    width: 300px;
-    align-items: center;
+  display: flex;
+  position: relative;
+  width: 300px;
+  align-items: center;
 }
-.search input{
-    position: relative;
-    width: 300px;
-    height: 38px;
-    padding: 10px 50px 10px 25px;
-    border-radius: 20px;
-    font-size: 15px;
-    background-color: rgba(0,0,0,0);
-    border: 1px solid #838282;
-    color: #e3e3e3;
+.search input {
+  position: relative;
+  width: 300px;
+  height: 38px;
+  padding: 10px 50px 10px 25px;
+  border-radius: 20px;
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #838282;
+  color: #e3e3e3;
 }
 .search i {
-    position: absolute;
-    right: 0;
-    padding: 10px 25px;
-    color: #cecbcb;
-    font-size: 20px;
+  position: absolute;
+  right: 0;
+  padding: 10px 25px;
+  color: #cecbcb;
+  font-size: 20px;
 }
-.search i:hover{
-    cursor: pointer;
+.search i:hover {
+  cursor: pointer;
 }
 
 /* Login CSS */
-.login__icon{
-    position: relative;
-    padding: 23px 0;
+.login__icon {
+  position: relative;
+  padding: 23px 0;
+  display: flex;
+  align-items: center;
 }
 .login__icon .login__use:hover,
-.login__icon .login__arrow:hover{
-    cursor: pointer;
+.login__icon .login__arrow:hover {
+  cursor: pointer;
 }
 .login__icon .login__use {
-    padding: 10px;
-    margin-left: 20px;
-    border-radius: 50%;
-    background-color: #959494f1;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #959494f1;
 }
 
-.login .login__nav{
-    position: absolute;
-    display: none;
-    list-style: none;
-    background-color: #211f1ff1;
-    min-width: 100px;
-    width: 120px;
-    top: 83px;
-    right: 0;
-    animation: .1s effect_login;
+.login .login__nav {
+  position: absolute;
+  display: none;
+  list-style: none;
+  background-color: #211f1ff1;
+  min-width: 100px;
+  width: 120px;
+  top: 83px;
+  right: 0;
+  animation: 0.1s effect_login;
 }
 .login__nav li {
-    padding: 10px;
+  padding: 10px;
 }
 .login__nav a {
-    display: block;
-    text-decoration: none;
-    color: #cecbcb;
-    font-size: 16px;
+  display: block;
+  text-decoration: none;
+  color: #cecbcb;
+  font-size: 16px;
 }
-.login .login__icon:hover .login__nav{
-    display: block;
-}
-
-.login .login__nav::before{
-    content: "";
-    position: absolute;
-    top: -24px;
-    right: 20px;
-    border-top: 12px solid transparent;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-bottom: 12px solid #3b3939f1;
+.login .login__icon:hover .login__nav {
+  display: block;
 }
 
+.login .login__nav::before {
+  content: "";
+  position: absolute;
+  top: -24px;
+  right: 20px;
+  border-top: 12px solid transparent;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid #3b3939f1;
+}
