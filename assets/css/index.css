@@ -87,6 +87,7 @@ html {
   top: 51px;
   left: 0;
   min-width: 150px;
+  z-index: 99999;
 }
 .nav .sub__nav li {
   padding: 8px 20px;
@@ -204,6 +205,7 @@ html {
 /*container*/
 #page-home {
   margin-bottom: 20px;
+  display: none;
 }
 .film__hot {
   background-color: #0e0d12;
@@ -639,9 +641,7 @@ html {
 .movie-list__poster-img:hover {
   opacity: 0.8;
 }
-.mt-top {
-  margin-top: 10px;
-}
+
 .bd-right {
   border-right: 1px solid #2f2f33;
 }
@@ -679,4 +679,89 @@ html {
 }
 #scrollUp:hover {
   opacity: 1;
+}
+/*page 1*/
+#page-film {
+  background-color: #131722;
+  padding-top: 37px;
+}
+.masvideos-breadcrumb {
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+.masvideos-breadcrumb a {
+  color: #949cb0;
+  display: inline-block;
+  text-decoration: none;
+}
+.masvideos-breadcrumb a:hover {
+  color: #24baef;
+}
+.delimiter {
+  display: inline-block;
+  margin: 0 10px;
+  color: #949cb0;
+}
+.catalog {
+  color: white;
+}
+#block-7 {
+  margin: 30px 0 5px;
+  padding: 0 20px 25px;
+  background-color: #1c212e;
+}
+.top-week {
+  margin-right: 10px;
+  color: #24baef;
+}
+.top-month {
+  margin-left: 10px;
+}
+.widget {
+  background-color: #1c212e;
+  margin-top: 20px;
+  padding: 25px 20px 14px;
+}
+.widget__title {
+  margin: 0 0 30px;
+  padding: 0 0 17px;
+}
+.masvideo {
+  list-style: none;
+}
+.masvideo-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px 0;
+}
+.square {
+  padding-right: 20px;
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+}
+.square i:first-child {
+  color: #b4bbc0;
+}
+.square i:last-child {
+  display: none;
+  color: #24baef;
+}
+.masvideo-item a {
+  font-size: 13px;
+  text-decoration: none;
+  color: #b4bbc0;
+}
+.masvideo-item:hover a {
+  color: #24baef;
+}
+.masvideo-item:hover .square i:first-child {
+  display: none;
+}
+.masvideo-item:hover .square i:last-child {
+  display: block;
+}
+.mt-top {
+  margin-top: 20px;
 }
