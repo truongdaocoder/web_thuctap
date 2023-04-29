@@ -27,11 +27,13 @@
       <div id="header">
         <div class="header__before">
           <button><i class="fa-solid fa-bars"></i></button>
-          <img src="./assets/img/logo/LogoWeb.png" alt="" />
+          <a href="#" class="js-cata logo-link"
+            ><img src="./assets/img/logo/LogoWeb.png" alt=""
+          /></a>
           <ul class="nav">
-            <li><a href="#">Phim Lẻ</a></li>
+            <li><a href="#" class="js-cata">Phim Lẻ</a></li>
             <li>
-              <a href="#">Phim Bộ</a>
+              <a href="#" class="js-cata">Phim Bộ</a>
               <i class="fa-solid fa-chevron-down"></i>
               <ul class="sub__nav">
                 <li><a href="#">Hàn Quốc</a></li>
@@ -42,9 +44,9 @@
                 <li><a href="#">Khác</a></li>
               </ul>
             </li>
-            <li><a href="#">Phim Chiếu Rạp</a></li>
+            <li><a href="#" class="js-cata">Phim Chiếu Rạp</a></li>
             <li>
-              <a href="#">OTT</a>
+              <a href="#" class="js-cata">OTT</a>
               <i class="fa-solid fa-chevron-down"></i>
               <ul class="sub__nav">
                 <li><a href="#">Netflix</a></li>
@@ -1264,13 +1266,13 @@
           </div>
         </div>
         <!--PAGE-SUB-->
-        <div id="page-film">
+        <div id="page-sub">
           <div class="grid wide">
             <nav class="masvideos-breadcrumb">
               <a href="">Home</a
               ><span class="delimiter"
                 ><i class="fa-solid fa-angle-right"></i></span
-              ><span class="catalog">Phim Lẻ</span>
+              ><span class="catalog-name">Phim Lẻ</span>
             </nav>
             <div class="row">
               <div class="col l-4 mt-bot">
@@ -1293,7 +1295,7 @@
                     <span class="top-week">Top Tuần</span> |
                     <span class="top-month">Top Tháng</span>
                   </div>
-                  <div class="movie-list__infor">
+                  <div id="top-week-le" class="movie-list__infor">
                     <div class="movie-list">
                       <div class="movie-list__poster">1</div>
                       <div class="movie-list__body">
@@ -1350,6 +1352,71 @@
                       </div>
                     </div>
                   </div>
+                  <div
+                    id="top-week-bo"
+                    class="movie-list__infor"
+                    style="display: none"
+                  >
+                    <div class="movie-list">
+                      <div class="movie-list__poster">1</div>
+                      <div class="movie-list__body">
+                        <a href="" class="movie__link"
+                          ><h3 class="movie-list__name">
+                            Quy Lộ (Đường Về Nhà)
+                          </h3></a
+                        >
+                        <span class="movie-list__genre"
+                          >Tâm Lý – Tình Cảm
+                        </span>
+                      </div>
+                    </div>
+                    <div class="movie-list">
+                      <div class="movie-list__poster">2</div>
+                      <div class="movie-list__body">
+                        <a href="" class="movie__link"
+                          ><h3 class="movie-list__name">
+                            Trường Nguyệt Tẫn Minh
+                          </h3></a
+                        >
+                        <span class="movie-list__genre">Chính Kịch </span>
+                      </div>
+                    </div>
+                    <div class="movie-list">
+                      <div class="movie-list__poster">3</div>
+                      <div class="movie-list__body">
+                        <a href="" class="movie__link"
+                          ><h3 class="movie-list__name">
+                            Tài Xế Ẩn Danh Phần 2
+                          </h3></a
+                        >
+                        <span class="movie-list__genre">Hành Động</span>
+                      </div>
+                    </div>
+                    <div class="movie-list">
+                      <div class="movie-list__poster">4</div>
+                      <div class="movie-list__body">
+                        <a href="" class="movie__link"
+                          ><h3 class="movie-list__name">
+                            Người Trong Mộng Xuân Khuê
+                          </h3></a
+                        >
+                        <span class="movie-list__genre"
+                          >Cổ Trang,Tâm Lí - Tình Cảm
+                        </span>
+                      </div>
+                    </div>
+                    <div class="movie-list">
+                      <div class="movie-list__poster">5</div>
+                      <div class="movie-list__body">
+                        <a href="" class="movie__link"
+                          ><h3 class="movie-list__name">
+                            Tân Tam Quốc Diễn Nghĩa
+                          </h3></a
+                        >
+                        <span class="movie-list__genre">Cổ Trang </span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div id="block-7" class="widget widget_block">
                   <div style="margin-top: -20px; margin-bottom: 25px">
@@ -1366,7 +1433,7 @@
                 </div>
                 <div class="movie-list__inner">
                   <div class="movie-list__title">Phim Sắp Chiếu</div>
-                  <div class="movie-list__infor">
+                  <div id="movie-list-le" class="movie-list__infor">
                     <div class="movie-list">
                       <div class="movie-list__poster">1</div>
                       <div class="movie-list__body">
@@ -1888,10 +1955,10 @@
                 </div>
               </div>
               <div class="col l-8">
-                <div class="movie-list__title mt-top top-day__title">
+                <div class="movie-list__title mt-top top-day__title js-top-day">
                   TOP Ngày
                 </div>
-                <div class="row">
+                <div id="top-film-le" class="row">
                   <div class="col l-2">
                     <div class="film-list-item mt-top">
                       <span class="year_update" style="z-index: 999">
@@ -2042,6 +2109,1198 @@
                     </div>
                   </div>
                 </div>
+                <div id="top-film-bo" class="row" style="display: none">
+                  <div class="l-2 col">
+                    <div class="film-list-item mt-top">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/huyen-mong-tinh-duyen-romance-beyond-romance-2023-vietsub_1.jpeg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-name top-day-name">
+                          Huyễn Mộng Tình Duyên
+                        </div>
+                        <div class="tv-show_body-desc top-day-desc">
+                          Hài Hước , Neflix,Tâm Lí - Tình Cảm
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item mt-top">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/MV5BZDIzMTRlYzAtNmM2ZS00NzVhLWFhZmEtYTc1NjMyZTc1Yzg4XkEyXkFqcGdeQXVyNTkzNjEwMjI@._V1_FMjpg_UX1000_.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-name top-day-name">
+                          Ngọn Lửa Tham Vọng
+                        </div>
+
+                        <div class="tv-show_body-desc top-day-desc">
+                          Hài Hước, Khác,Tâm Lí - Tình Cảm
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="more-view-item mt-top">
+                      <div class="more-view__poster">
+                        <a href="" class="more-view__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/more-view/48e18bd24a5e33ab951f1282399649ef.webp"
+                            class="more-view__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="more-view__body">
+                        <div class="tv-show_body-name top-day-name">
+                          Viễn Cổ Cự Thú: Thằn Lằn Sói
+                        </div>
+                        <div class="tv-show_body-desc top-day-desc">
+                          Tâm Lý – Tình Cảm Khoa Học
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="more-view-item mt-top">
+                      <div class="more-view__poster">
+                        <a href="" class="more-view__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/more-view/2005fb31c0eb0f43c80e293fa9bf9e3a.webp"
+                            class="more-view__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="more-view__body">
+                        <div class="tv-show_body-name top-day-name">
+                          Hồ Bơi Vô Cực
+                        </div>
+
+                        <div class="tv-show_body-desc top-day-desc">
+                          Canada Khoa Học
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="more-view-item mt-top">
+                      <div class="more-view__poster">
+                        <a href="" class="more-view__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/more-view/55cc84ecf2f926daf26221d7d662a9f0.webp"
+                            class="more-view__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="more-view__body">
+                        <div class="tv-show_body-name top-day-name">JUNG_E</div>
+
+                        <div class="tv-show_body-desc top-day-desc">
+                          Chính Kịch Hàn Quốc Phiêu Lưu Tâm Lý – Tình Cảm
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="more-view-item mt-top">
+                      <div class="more-view__poster">
+                        <a href="" class="more-view__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/more-view/283a608ea7dcea650cd16efb78c4f814.webp"
+                            class="more-view__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="more-view__body">
+                        <div class="tv-show_body-name top-day-name">
+                          Thung Lũng Kangaroo
+                        </div>
+
+                        <div class="tv-show_body-desc top-day-desc">
+                          Khoa Học Mỹ Netflix
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div id="top-film-rap" class="row" style="display: none">
+                  <div class="l-2 col">
+                    <div class="film-list-item mt-top">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-le/gxIpw7oewZ17zOZUOk31KB0eel4-300x450.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-name top-day-name">
+                          Hiện Tượng Dị Thường
+                        </div>
+                        <div class="tv-show_body-desc top-day-desc">
+                          Hiện Tượng Dị Thường Kinh Dị Tây Ban Nha
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item mt-top">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/a_100532314_m_601_vi_260_360.webp"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-name top-day-name">
+                          Thanh Gươm Diệt Quỷ: Làng Thợ Rèn
+                        </div>
+                        <div class="tv-show_body-desc top-day-desc">
+                          Nhật Bản , Hành Động
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item mt-top">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/bac-si-cha-dr-cha-doctor-cha-jung-sook-2023-vietsub_1.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-name top-day-name">
+                          Bác Sĩ Cha
+                        </div>
+                        <div class="tv-show_body-desc top-day-desc">
+                          Chính Kịch , Neflix,Tâm Lí - Tình Cảm
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item mt-top">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/duoi-bong-mat-troi-in-the-shadow-of-the-sun-eclipse-of-the-heart-vietsub_1.jpeg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-name top-day-name">
+                          Dưới Bóng Mặt Trời
+                        </div>
+                        <div class="tv-show_body-desc top-day-desc">
+                          Hài Hước, Khác , Neflix,Tâm Lí - Tình Cảm
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item mt-top">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-le/iy1Q3aT2URQWhX1YeEB243FHizV-300x450.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-name top-day-name">
+                          Tách Biệt
+                        </div>
+                        <div class="tv-show_body-desc top-day-desc">
+                          Kinh Dị Mỹ Neflix
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item mt-top">
+                      <span class="year_update" style="z-index: 999">
+                        2022
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/8f630176384ebc897c70a8373739992c.webp"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-name top-day-name">
+                          Thử Thách Thần Tượng (Running Man)
+                        </div>
+                        <div class="tv-show_body-desc top-day-desc">
+                          Chính Kịch Khác , Neflix
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div id="feature-cate-page">
+                  <div class="embla2">
+                    <div class="embla__viewport2">
+                      <div class="embla__container2" style="width: 762px">
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2022/10/Apple-TV-Shantaram-1.webp"
+                            />
+                            <a
+                              href="https://phimcoco.com/episode/shantaram-tap-12/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2022/10/Servant-Apple-TV.webp"
+                            />
+                            <a
+                              href="https://phimcoco.com/episode/dua-tre-thay-the-2-tap-10/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2022/10/maxresdefault-1.jpg"
+                            />
+                            <a href="https://phimcoco.com/movie/raymond-va-ray/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2022/10/Apple_TV_Bad_Sisters_key_art_graphic_header_4_1_show_home.jpg.og_.jpg"
+                            />
+                            <a
+                              href="https://phimcoco.com/episode/chi-em-lam-chieu-tap-10/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2022/09/thumbnail-post-377867-see-saison-3-une-date-et-un-premier-aperu-pour-la-dernire-saison-justabouttv-e1663319447934.png"
+                            />
+                            <a
+                              href="https://phimcoco.com/episode/thay-phan-3-tap-8/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2022/09/1661159611_094240_1661162601_noticia_normal-e1663320084560.jpg"
+                            />
+                            <a
+                              href="https://phimcoco.com/episode/nu-khong-lo-xanh-tap-9/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2022/10/maxresdefault-1-1.jpg"
+                            />
+                            <a
+                              href="https://phimcoco.com/episode/nam-ngay-o-trung-tam-y-te-memorial-tap-8/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2022/09/maxresdefault-2.jpg"
+                            />
+                            <a
+                              href="https://phimcoco.com/movie/the-greatest-beer-run-ever/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2022/09/maxresdefault-1.jpg"
+                            />
+                            <a
+                              href="https://phimcoco.com/episode/surface-tap-8/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2022/09/Apple_TV_Trying_key_art_16_9.webp"
+                            />
+                            <a
+                              href="https://phimcoco.com/episode/co-gang-2-tap-8/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2022/08/maxresdefault-1.jpg"
+                            />
+                            <a href="https://phimcoco.com/movie/thoi-van/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2022/08/Screenshot_2020-09-15-mb_mando_20200915_2x-copy-JPEG-Image-1600-×-450-pixels-Scaled-96-1024x492-1-e1663320257815.png"
+                            />
+                            <a
+                              href="https://phimcoco.com/episode/nguoi-mandalore-tap-8/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2022/08/severance-apple-tv-plus.webp"
+                            />
+                            <a
+                              href="https://phimcoco.com/episode/thoi-viec-phan-1-tap-9/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2022/08/how-to-watch-loot.webp"
+                            />
+                            <a href="https://phimcoco.com/episode/loot-tap-10/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2022/08/ATV_Black_Bird_key_art_Banner_2364x688_graphic_header_4_1_show_home.jpg"
+                            />
+                            <a
+                              href="https://phimcoco.com/episode/hac-dieu-phan-1-tap-6/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2022/08/30-The-Morning-Show.jpg"
+                            />
+                            <a
+                              href="https://phimcoco.com/episode/ban-tin-sang-phan-1-tap-10-tap-cuoi/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2022/08/3lE4tj7Z4GXluiGlk2XN435vRKA-e1663320207874.jpg"
+                            />
+                            <a
+                              href="https://phimcoco.com/episode/hiep-si-anh-trang-tap-6/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2022/08/obi-wan-kenobi-appears-to-be-bisexual-in-new-star-wars-spin-off-novel-01-e1663321018605.jpg"
+                            />
+                            <a
+                              href="https://phimcoco.com/episode/chien-tranh-giua-cac-vi-sao-obi-wan-kenobi-tap-6/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2022/08/1_PS_25052022msmarvel-e1663320890316.jpg"
+                            />
+                            <a
+                              href="https://phimcoco.com/episode/ms-marvel-tap-6/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2022/08/Screenshot_2020-09-15-mb_mando_20200915_2x-copy-JPEG-Image-1600-×-450-pixels-Scaled-96-1024x492-1-e1663320257815.png"
+                            />
+                            <a
+                              href="https://phimcoco.com/episode/nguoi-mandalore-phan-2-tap-8-tap-cuoi/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2022/08/maxresdefault.jpg"
+                            />
+                            <a
+                              href="https://phimcoco.com/episode/hon-ma-nha-van-phan-2-tap-7-tap-cuoi/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2022/01/cuoc-chien-khong-gian-3-hd-for-all-mankind-3.jpg"
+                            />
+                            <a
+                              href="https://phimcoco.com/episode/cuoc-chien-khong-gian-3-tap-8/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2022/08/pkW3zd4PLFFQDpGqYlS9Cw0iukH.jpg"
+                            />
+                            <a
+                              href="https://phimcoco.com/movie/qua-nhanh-qua-nguy-hiem-9-huyen-thoai-toc-do/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2023/04/AAAABWseB-IupIlZ1pdWUQP6cFtE2hPMWDcAosbRtLqKsWrKWBdfa_Sv8rKI1tx4VX12ExVAg_p0dHnQ2GoDtoB6e2FHbsuIq7kemGMEqaglYYHnUC5oiDvB0TSDRkKby6Xp3uk-.jpg"
+                            />
+                            <a
+                              href="https://phimcoco.com/episode/phong-hau-tap-11/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2023/04/khao-khat-thanh-cong-poster.jpg"
+                            />
+                            <a
+                              href="https://phimcoco.com/movie/hunger-khao-khat-thanh-cong/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2023/03/jEbW6F9KIz8zYHmJJjA0E9V9KIz-1.jpg"
+                            />
+                            <a
+                              href="https://phimcoco.com/episode/tai-xe-an-danh-phan-2-tap-16-tap-cuoi/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2023/03/AAAABT_5xdQw69h1sfzPuPDYHI4iO27o02q3pprfE4YF8nHxcamIXv6bdbVV7zaBcU4rvVFPAbNe7Jb6gYmCPuJGes4Leh_2ku2eni5tvorr9tPyKnCpjy4Gb5Zh9UjGXlJxTbdM.jpg"
+                            />
+                            <a href="https://phimcoco.com/movie/kill-boksoon/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2023/04/cIYfI2d3Gs4mjAeMERltjcdYtJD-1.jpg"
+                            />
+                            <a
+                              href="https://phimcoco.com/episode/bat-hoa-phan-1-tap-10/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2023/04/AAAABQf5OF8FVBMCCCH7368h4hVb0eZ8AgI5D6HQl7_K-N8IWP6MT2gCQw97_4Tbavqws5lL30cva278Wznc2DSdZ4W3-HHN0Ve3P7k.webp"
+                            />
+                            <a
+                              href="https://phimcoco.com/movie/hon-papa-da-con-gai/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2023/03/AAAABYqdZONhS8WOzGXT3EFRRn4WZSGC1UQxeeKxnBLleHxr1HmApuvdHS4VXmliQ7Zb6ROqFLOU5Eo44UDpkEcEZhfPoNU6nR8eZbzg.jpg"
+                            />
+                            <a
+                              href="https://phimcoco.com/episode/vinh-quang-trong-thu-han-phan-2-tap-8/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2023/04/AAAABbVkpO7r7w0LQMKJBKQTFA_rrkOeSJjjX9RA5FHZ0D-ZrrNRz46tMrLSGocQMx2d9fshZ4NcMmHKNlmaTkdJoyqQy8RlEZShyso7Ri9fCtUfT-Bdq3NyKJSpXsKWKFhJkwZm.jpg"
+                            />
+                            <a
+                              href="https://phimcoco.com/movie/cai-chet-cua-bay-vi-vua/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2023/04/AAAABXSu91s08-23-G-2OkJ667xOcgElcBFiYWmZUcxz6qDYTGsAdb7tP5-AORs_oPFXl_PVGzHaikcK_USrljzS38C1XEKhIpp630CEaqjridAPFSyWk29uCOlWi1wN25PQKQMl.jpg"
+                            />
+                            <a
+                              href="https://phimcoco.com/episode/am-anh-yeu-va-do-ki-tap-4/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2023/04/sddefault.jpg"
+                            />
+                            <a href="https://phimcoco.com/movie/hanh-phuc-mau/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2023/03/AAAABcsezFNhiRfJifojqVTuGm-ixLYWT1iuPMZ23yVSY5KYq_DT0JQ-bFv0NwL_hgv8XXY4lpot73SZVp0t0uA_6IWICu7ADQNwwn2_SoxFOKuOyTL3lbTnYJH3V8CqwL9pbCff.jpg"
+                            />
+                            <a
+                              href="https://phimcoco.com/episode/dac-vu-dem-tap-10/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2023/04/AAAABT8Knn6Cq5dk1DZfIsqFTLHiTm64fitXZ3HjGDveGMlZ-5fn1dO1zpQpvrsDZj2gyNBaceVHX_JCppv6rO_A7iPfpouqc_tnHIU.webp"
+                            />
+                            <a
+                              href="https://phimcoco.com/movie/muoi-loi-nguyen-tro-lai/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2022/08/AAAABbRRwcvtFa7KTlk6oAd_rH32WWpy_A2METvub-cUbcrecXtB8XghAUsRGm_AZg8yMEiajjcDW9QpppS84lJMQa6CfiuR2my2wDKb.jpg"
+                            />
+                            <a
+                              href="https://phimcoco.com/episode/chang-hau-cong-chua-kho-gan-tap-22/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2023/03/210318-dnp-phim-bay-ngot-ngao-09-2695-1.jpg"
+                            />
+                            <a href="https://phimcoco.com/movie/bay-ngot-ngao/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2022/12/4nn61f6u_1920x1080-chiecbatluavavaycongchua.png"
+                            />
+                            <a
+                              href="https://phimcoco.com/episode/chiec-bat-lua-va-vay-cong-chua-tap-36-tap-cuoi/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2022/08/ktfp953iNdswZWB0Ou2Nn27vure-1.jpg"
+                            />
+                            <a
+                              href="https://phimcoco.com/movie/noah-dai-hong-thuy/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2022/08/AAAABQZ0k07_r2ntX5gyqPHELewWNMPcZ8y0ZEN6VZ7laJwvfYkHM6wl8fwkyoFJkh9AFqwQslLKDSWd6wWQ-lDnO2Q3TJA3jkLMJV-N.jpg"
+                            />
+                            <a
+                              href="https://phimcoco.com/episode/mot-lan-nua-tap-50-2/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2023/03/AAAABeqsGX1Q2Nlenf378Xf8F8naNLEM9VR-05Xn-8YH_HE4d-6IEYaqqUCYZVqO6i3KigxkFu8P8IrkmqMbmC3ItSNQL7Jo9l3h-Gw.webp"
+                            />
+                            <a
+                              href="https://phimcoco.com/movie/thanh-soi-cuc-dai-trong-dem/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                        <div class="embla__slide2">
+                          <div class="embla__slide__inner2">
+                            <img
+                              class="embla__slide__img2"
+                              src="//image004.modooup.com/wp-content/uploads/2023/03/AAAABZJwW2C94Tf5felC2lxyf0XnQQvKf0xWOYblNS7FUE5L892DmeBekPCceoiJscxZmUGju80TutrX-USv6Og4b4PL4wuyBv57b75uywNGq6BJewCGIJsvkKxksc2_HKKACjT.jpg"
+                            />
+                            <a
+                              href="https://phimcoco.com/episode/sat-nhan-bat-chuoc-tap-10/"
+                              ><button
+                                class="btn btn-primary"
+                                style="
+                                  left: 20px;
+                                  position: absolute;
+                                  bottom: 50px;
+                                "
+                              >
+                                Xem phim
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button
+                      class="embla__button embla__button--prev2"
+                      type="button"
+                    >
+                      <svg
+                        class="embla__button__svg"
+                        viewBox="137.718 -1.001 366.563 643.999"
+                      >
+                        <path
+                          d="M428.36 12.5c16.67-16.67 43.76-16.67 60.42 0 16.67 16.67 16.67 43.76 0 60.42L241.7 320c148.25 148.24 230.61 230.6 247.08 247.08 16.67 16.66 16.67 43.75 0 60.42-16.67 16.66-43.76 16.67-60.42 0-27.72-27.71-249.45-249.37-277.16-277.08a42.308 42.308 0 0 1-12.48-30.34c0-11.1 4.1-22.05 12.48-30.42C206.63 234.23 400.64 40.21 428.36 12.5z"
+                        ></path>
+                      </svg>
+                    </button>
+                    <button
+                      class="embla__button embla__button--next2"
+                      type="button"
+                    >
+                      <svg
+                        class="embla__button__svg"
+                        viewBox="0 0 238.003 238.003"
+                      >
+                        <path
+                          d="M181.776 107.719L78.705 4.648c-6.198-6.198-16.273-6.198-22.47 0s-6.198 16.273 0 22.47l91.883 91.883-91.883 91.883c-6.198 6.198-6.198 16.273 0 22.47s16.273 6.198 22.47 0l103.071-103.039a15.741 15.741 0 0 0 4.64-11.283c0-4.13-1.526-8.199-4.64-11.313z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
                 <div
                   class="ads-box-home-middle"
                   style="
@@ -2051,9 +3310,41 @@
                     background-color: #1b212d;
                   "
                 ></div>
-                <div class="movie-list__title mt-top top-day__title">
+                <div
+                  class="movie-list__title mt-top top-day__title js-title-list"
+                >
                   Phim Lẻ
                 </div>
+                <header
+                  class="page-header ott-archive-page"
+                  style="width: 100%; display: none"
+                >
+                  <h1 class="page-title">OTT</h1>
+                  <div class="ott_logo">
+                    <div class="ott_netflix">
+                      <a href="">
+                        <img
+                          src="https://image004.modooup.com/wp-content/uploads/ott/netflix.png"
+                        />
+                      </a>
+                    </div>
+                    <div class="ott_disney">
+                      <a href="">
+                        <img
+                          src="https://image004.modooup.com/wp-content/uploads/ott/disney_plus.png"
+                        />
+                      </a>
+                    </div>
+                    <div class="ott_appletv">
+                      <a href="">
+                        <img
+                          src="https://image004.modooup.com/wp-content/uploads/ott/appletv.png"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </header>
+
                 <div class="control-bar mt-top mt-bot">
                   <ul class="nav">
                     <li class="nav-item film-nav">
@@ -2088,7 +3379,7 @@
                     <option value="date" selected="selected">Mới nhất</option>
                   </select>
                 </div>
-                <div class="row">
+                <div id="film-le-list" class="row" style="display: none">
                   <div class="l-2 col">
                     <div class="film-list-item">
                       <span class="year_update" style="z-index: 999">
@@ -2446,7 +3737,9 @@
                         /></a>
                       </div>
                       <a href="" class="tv-show__body">
-                        <div class="tv-show_body-desc">VIETSUB – Tập 2</div>
+                        <div class="tv-show_body-desc">
+                          Nhật Bản , Hành Động
+                        </div>
                         <div class="tv-show_body-name">
                           Thanh Gươm Diệt Quỷ: Làng Thợ Rèn
                         </div>
@@ -2468,7 +3761,9 @@
                         /></a>
                       </div>
                       <a href="" class="tv-show__body">
-                        <div class="tv-show_body-desc">VIETSUB – Tập 650</div>
+                        <div class="tv-show_body-desc">
+                          Chính Kịch Khác , Neflix
+                        </div>
                         <div class="tv-show_body-name">
                           Thử Thách Thần Tượng (Running Man)
                         </div>
@@ -2490,7 +3785,9 @@
                         /></a>
                       </div>
                       <a href="" class="tv-show__body">
-                        <div class="tv-show_body-desc">VIETSUB – Tập 12</div>
+                        <div class="tv-show_body-desc">
+                          Chính Kịch Khác , Neflix
+                        </div>
                         <div class="tv-show_body-name">
                           Pandora: Phía Dưới Thiên Đường
                         </div>
@@ -2512,7 +3809,9 @@
                         /></a>
                       </div>
                       <a href="" class="tv-show__body">
-                        <div class="tv-show_body-desc">VIETSUB – Tập 2</div>
+                        <div class="tv-show_body-desc">
+                          Chính Kịch Khác , Neflix,Mỹ
+                        </div>
                         <div class="tv-show_body-name">
                           Pháp Sư Đến Từ Sao Thủy (Phần 2)
                         </div>
@@ -2534,7 +3833,9 @@
                         /></a>
                       </div>
                       <a href="" class="tv-show__body">
-                        <div class="tv-show_body-desc">VIETSUB – Tập 4</div>
+                        <div class="tv-show_body-desc">
+                          Chính Kịch Khác , Neflix,Tâm Lí - Tình Cảm
+                        </div>
                         <div class="tv-show_body-name">
                           Chuyện Tình Không Định Trước
                         </div>
@@ -2556,7 +3857,9 @@
                         /></a>
                       </div>
                       <a href="" class="tv-show__body">
-                        <div class="tv-show_body-desc">VIETSUB – Tập2</div>
+                        <div class="tv-show_body-desc">
+                          Khác , Neflix,Tâm Lí - Tình Cảm
+                        </div>
                         <div class="tv-show_body-name">Người Ấy Đã Đến</div>
                       </a>
                     </div>
@@ -2576,7 +3879,9 @@
                         /></a>
                       </div>
                       <a href="" class="tv-show__body">
-                        <div class="tv-show_body-desc">VIETSUB – Tập2</div>
+                        <div class="tv-show_body-desc">
+                          Chính Kịch , Neflix,Tâm Lí - Tình Cảm
+                        </div>
                         <div class="tv-show_body-name">Bác Sĩ Cha</div>
                       </a>
                     </div>
@@ -2596,7 +3901,9 @@
                         /></a>
                       </div>
                       <a href="" class="tv-show__body">
-                        <div class="tv-show_body-desc">VIETSUB – Tập 6</div>
+                        <div class="tv-show_body-desc">
+                          Hài Hước, Khác , Neflix,Tâm Lí - Tình Cảm
+                        </div>
                         <div class="tv-show_body-name">Dưới Bóng Mặt Trời</div>
                       </a>
                     </div>
@@ -2616,7 +3923,9 @@
                         /></a>
                       </div>
                       <a href="" class="tv-show__body">
-                        <div class="tv-show_body-desc">VIETSUB – Tập 17</div>
+                        <div class="tv-show_body-desc">
+                          Hài Hước , Neflix,Tâm Lí - Tình Cảm
+                        </div>
                         <div class="tv-show_body-name">
                           Huyễn Mộng Tình Duyên
                         </div>
@@ -2638,7 +3947,9 @@
                         /></a>
                       </div>
                       <a href="" class="tv-show__body">
-                        <div class="tv-show_body-desc">VIETSUB – Tập 19</div>
+                        <div class="tv-show_body-desc">
+                          Hài Hước, Khác,Tâm Lí - Tình Cảm
+                        </div>
                         <div class="tv-show_body-name">Ngọn Lửa Tham Vọng</div>
                       </a>
                     </div>
@@ -2718,7 +4029,1840 @@
                     </div>
                   </div>
                 </div>
-                <div class="page-control-bar-bottom">
+                <div id="film-bo-list" class="row" style="display: none">
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2022
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-le/hpm_1665546188603.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">Kinh dị – Ma</div>
+                        <div class="tv-show_body-name">Hạnh Phúc Máu</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-le/ad6125d0a5ff11ea9b1649f51a9df8f8-300x450.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Kinh Dị,Kinh Dị-Ma ,Mỹ
+                        </div>
+                        <div class="tv-show_body-name">Lời Nguyền</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-le/2pWKHp8TO8St69MuX4jFPgz17Rf-1-300x450.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">Bí Ẩn Mỹ Tội Phạm</div>
+                        <div class="tv-show_body-name">Thú Tính</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col l-2">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/top-day/122b1073657379353f0f5df7f844f005.webp"
+                            class="tv-show__poster--image top-day__poster--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">Khác Mỹ,Neflix</div>
+                        <div class="tv-show_body-name">
+                          Nguyên Tố Thứ 5 Nguyên Tố Thứ 5 Nguyên Tố Thứ 5
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col l-2">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        1994
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/top-day/37b707fc3b4b1707dd8bbe250a103e2c.webp"
+                            class="tv-show__poster--image top-day__poster--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">Hài Hước Hình Sự</div>
+                        <div class="tv-show_body-name">Đọa Lạc Thiên Sứ</div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-le/u78UESgTdhWetb2iq0duC38Y5di-300x450.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Chính Kịch Mỹ Neflix
+                        </div>
+                        <div class="tv-show_body-name">Bốn Ngày Tốt Lành</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-le/6pYhDPzYPGKvDYpxdf0IUE3RDAS-300x450.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Chính Kịch Mỹ Neflix
+                        </div>
+                        <div class="tv-show_body-name">Vùng Đất</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col l-2">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/top-day/bay-nnn-2-jpeg-4122-1644492964-6309-1647916490-300x450.jpg"
+                            class="tv-show__poster--image top-day__poster--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">Hàn Quốc,Neflix</div>
+                        <div class="tv-show_body-name">Bẫy Ngọt Ngào</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col l-2">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/top-day/bd4463760c30cea393ebf3c6ffe135f8.webp"
+                            class="tv-show__poster--image top-day__poster--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Châu Âu , Mỹ , Neflix
+                        </div>
+                        <div class="tv-show_body-name">
+                          Quá Nhanh Quá Nguy Hiểm 9: Huyền Thoại Tốc Độ
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/a_100532314_m_601_vi_260_360.webp"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Nhật Bản , Hành Động
+                        </div>
+                        <div class="tv-show_body-name">
+                          Thanh Gươm Diệt Quỷ: Làng Thợ Rèn
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-le/xUvSeFhdsJbKFOaHnB9TeTZpJKs-300x450.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Anh,Lịch Sử ,Chính Kịch
+                        </div>
+                        <div class="tv-show_body-name">
+                          Cái Chết Của Bảy Vị Vua
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-le/gxIpw7oewZ17zOZUOk31KB0eel4-300x450.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Hiện Tượng Dị Thường Kinh Dị Tây Ban Nha
+                        </div>
+                        <div class="tv-show_body-name">
+                          Hiện Tượng Dị Thường
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-le/iy1Q3aT2URQWhX1YeEB243FHizV-300x450.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">Kinh Dị Mỹ Neflix</div>
+                        <div class="tv-show_body-name">Tách Biệt</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2022
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/8f630176384ebc897c70a8373739992c.webp"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Chính Kịch Khác , Neflix
+                        </div>
+                        <div class="tv-show_body-name">
+                          Thử Thách Thần Tượng (Running Man)
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list//pandora-phia-duoi-thien-duong-pandora-beneath-the-paradise-2023-vietsub_1.jpeg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Chính Kịch Khác , Neflix
+                        </div>
+                        <div class="tv-show_body-name">
+                          Pandora: Phía Dưới Thiên Đường
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/mobile-suit-gundam-the-witch-from-mercury-season-2.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Chính Kịch Khác , Neflix,Mỹ
+                        </div>
+                        <div class="tv-show_body-name">
+                          Pháp Sư Đến Từ Sao Thủy (Phần 2)
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-le/5L3ZdfHBeDdDgYblbJDPNF0vuNP-300x450.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">Khác Mỹ,Neflix</div>
+                        <div class="tv-show_body-name">Vụn Vỡ</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/Chuyen-Tinh-Khong-Dinh-Truoc-250x350-1.png"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Chính Kịch Khác , Neflix,Tâm Lí - Tình Cảm
+                        </div>
+                        <div class="tv-show_body-name">
+                          Chuyện Tình Không Định Trước
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="more-view-item">
+                      <div class="more-view__poster">
+                        <a href="" class="more-view__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/more-view/2005fb31c0eb0f43c80e293fa9bf9e3a.webp"
+                            class="more-view__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="more-view__body">
+                        <div class="tv-show_body-desc">Canada Khoa Học</div>
+                        <div class="tv-show_body-name">Hồ Bơi Vô Cực</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="more-view-item">
+                      <div class="more-view__poster">
+                        <a href="" class="more-view__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/more-view/55cc84ecf2f926daf26221d7d662a9f0.webp"
+                            class="more-view__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="more-view__body">
+                        <div class="tv-show_body-desc">
+                          Chính Kịch Hàn Quốc Phiêu Lưu Tâm Lý – Tình Cảm
+                        </div>
+                        <div class="tv-show_body-name">JUNG_E</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="more-view-item">
+                      <div class="more-view__poster">
+                        <a href="" class="more-view__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/more-view/283a608ea7dcea650cd16efb78c4f814.webp"
+                            class="more-view__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="more-view__body">
+                        <div class="tv-show_body-desc">Khoa Học Mỹ Netflix</div>
+                        <div class="tv-show_body-name">Thung Lũng Kangaroo</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/46a76b61ec0247a4efe23c0c6d4dd6e6.webp"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Khác , Neflix,Tâm Lí - Tình Cảm
+                        </div>
+                        <div class="tv-show_body-name">Người Ấy Đã Đến</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/bac-si-cha-dr-cha-doctor-cha-jung-sook-2023-vietsub_1.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Chính Kịch , Neflix,Tâm Lí - Tình Cảm
+                        </div>
+                        <div class="tv-show_body-name">Bác Sĩ Cha</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/duoi-bong-mat-troi-in-the-shadow-of-the-sun-eclipse-of-the-heart-vietsub_1.jpeg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Hài Hước, Khác , Neflix,Tâm Lí - Tình Cảm
+                        </div>
+                        <div class="tv-show_body-name">Dưới Bóng Mặt Trời</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/huyen-mong-tinh-duyen-romance-beyond-romance-2023-vietsub_1.jpeg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Hài Hước , Neflix,Tâm Lí - Tình Cảm
+                        </div>
+                        <div class="tv-show_body-name">
+                          Huyễn Mộng Tình Duyên
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col l-2">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2014
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/top-day/94518e257fe76cdf127b25bc2c41fdeb.webp"
+                            class="tv-show__poster--image top-day__poster--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">Hàn Quốc ,Hình Sự</div>
+                        <div class="tv-show_body-name">Bộ đôi siêu hạng</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col l-2">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/top-day/b741afb1db4a0a78789e1193ccbf8abd.webp"
+                            alt=""
+                            class="tv-show__poster--image top-day__poster--img"
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">Hài Hước,Neflix</div>
+                        <div class="tv-show_body-name">Nghề Siêu Dễ</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-le/lHbSC2Np17CRsRXIbaE0YY1Hora-300x450.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Chính Kịch Khác , Neflix
+                        </div>
+                        <div class="tv-show_body-name">Thầy Dạy Thay</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/MV5BZDIzMTRlYzAtNmM2ZS00NzVhLWFhZmEtYTc1NjMyZTc1Yzg4XkEyXkFqcGdeQXVyNTkzNjEwMjI@._V1_FMjpg_UX1000_.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Hài Hước, Khác,Tâm Lí - Tình Cảm
+                        </div>
+                        <div class="tv-show_body-name">Ngọn Lửa Tham Vọng</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="more-view-item">
+                      <div class="more-view__poster">
+                        <a href="" class="more-view__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/more-view/48e18bd24a5e33ab951f1282399649ef.webp"
+                            class="more-view__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="more-view__body">
+                        <div class="tv-show_body-desc">
+                          Tâm Lý – Tình Cảm Khoa Học
+                        </div>
+                        <div class="tv-show_body-name">
+                          Viễn Cổ Cự Thú: Thằn Lằn Sói
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div id="film-rap-list" class="row" style="display: none">
+                  <div class="l-2 col">
+                    <div class="more-view-item">
+                      <div class="more-view__poster">
+                        <a href="" class="more-view__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/more-view/48e18bd24a5e33ab951f1282399649ef.webp"
+                            class="more-view__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="more-view__body">
+                        <div class="tv-show_body-desc">
+                          Tâm Lý – Tình Cảm Khoa Học
+                        </div>
+                        <div class="tv-show_body-name">
+                          Viễn Cổ Cự Thú: Thằn Lằn Sói
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-le/6pYhDPzYPGKvDYpxdf0IUE3RDAS-300x450.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Chính Kịch Mỹ Neflix
+                        </div>
+                        <div class="tv-show_body-name">Vùng Đất</div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-le/iy1Q3aT2URQWhX1YeEB243FHizV-300x450.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">Kinh Dị Mỹ Neflix</div>
+                        <div class="tv-show_body-name">Tách Biệt</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col l-2">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/top-day/122b1073657379353f0f5df7f844f005.webp"
+                            class="tv-show__poster--image top-day__poster--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">Khác Mỹ,Neflix</div>
+                        <div class="tv-show_body-name">
+                          Nguyên Tố Thứ 5 Nguyên Tố Thứ 5 Nguyên Tố Thứ 5
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col l-2">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        1994
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/top-day/37b707fc3b4b1707dd8bbe250a103e2c.webp"
+                            class="tv-show__poster--image top-day__poster--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">Hài Hước Hình Sự</div>
+                        <div class="tv-show_body-name">Đọa Lạc Thiên Sứ</div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-le/u78UESgTdhWetb2iq0duC38Y5di-300x450.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Chính Kịch Mỹ Neflix
+                        </div>
+                        <div class="tv-show_body-name">Bốn Ngày Tốt Lành</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-le/2pWKHp8TO8St69MuX4jFPgz17Rf-1-300x450.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">Bí Ẩn Mỹ Tội Phạm</div>
+                        <div class="tv-show_body-name">Thú Tính</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2022
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/8f630176384ebc897c70a8373739992c.webp"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Chính Kịch Khác , Neflix
+                        </div>
+                        <div class="tv-show_body-name">
+                          Thử Thách Thần Tượng (Running Man)
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list//pandora-phia-duoi-thien-duong-pandora-beneath-the-paradise-2023-vietsub_1.jpeg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Chính Kịch Khác , Neflix
+                        </div>
+                        <div class="tv-show_body-name">
+                          Pandora: Phía Dưới Thiên Đường
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-le/xUvSeFhdsJbKFOaHnB9TeTZpJKs-300x450.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Anh,Lịch Sử ,Chính Kịch
+                        </div>
+                        <div class="tv-show_body-name">
+                          Cái Chết Của Bảy Vị Vua
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-le/gxIpw7oewZ17zOZUOk31KB0eel4-300x450.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Hiện Tượng Dị Thường Kinh Dị Tây Ban Nha
+                        </div>
+                        <div class="tv-show_body-name">
+                          Hiện Tượng Dị Thường
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/mobile-suit-gundam-the-witch-from-mercury-season-2.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Chính Kịch Khác , Neflix,Mỹ
+                        </div>
+                        <div class="tv-show_body-name">
+                          Pháp Sư Đến Từ Sao Thủy (Phần 2)
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2022
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-le/hpm_1665546188603.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">Kinh dị – Ma</div>
+                        <div class="tv-show_body-name">Hạnh Phúc Máu</div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/Chuyen-Tinh-Khong-Dinh-Truoc-250x350-1.png"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Chính Kịch Khác , Neflix,Tâm Lí - Tình Cảm
+                        </div>
+                        <div class="tv-show_body-name">
+                          Chuyện Tình Không Định Trước
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-le/lHbSC2Np17CRsRXIbaE0YY1Hora-300x450.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Chính Kịch Khác , Neflix
+                        </div>
+                        <div class="tv-show_body-name">Thầy Dạy Thay</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/MV5BZDIzMTRlYzAtNmM2ZS00NzVhLWFhZmEtYTc1NjMyZTc1Yzg4XkEyXkFqcGdeQXVyNTkzNjEwMjI@._V1_FMjpg_UX1000_.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Hài Hước, Khác,Tâm Lí - Tình Cảm
+                        </div>
+                        <div class="tv-show_body-name">Ngọn Lửa Tham Vọng</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="more-view-item">
+                      <div class="more-view__poster">
+                        <a href="" class="more-view__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/more-view/2005fb31c0eb0f43c80e293fa9bf9e3a.webp"
+                            class="more-view__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="more-view__body">
+                        <div class="tv-show_body-desc">Canada Khoa Học</div>
+                        <div class="tv-show_body-name">Hồ Bơi Vô Cực</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="more-view-item">
+                      <div class="more-view__poster">
+                        <a href="" class="more-view__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/more-view/55cc84ecf2f926daf26221d7d662a9f0.webp"
+                            class="more-view__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="more-view__body">
+                        <div class="tv-show_body-desc">
+                          Chính Kịch Hàn Quốc Phiêu Lưu Tâm Lý – Tình Cảm
+                        </div>
+                        <div class="tv-show_body-name">JUNG_E</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="more-view-item">
+                      <div class="more-view__poster">
+                        <a href="" class="more-view__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/more-view/283a608ea7dcea650cd16efb78c4f814.webp"
+                            class="more-view__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="more-view__body">
+                        <div class="tv-show_body-desc">Khoa Học Mỹ Netflix</div>
+                        <div class="tv-show_body-name">Thung Lũng Kangaroo</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-le/5L3ZdfHBeDdDgYblbJDPNF0vuNP-300x450.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">Khác Mỹ,Neflix</div>
+                        <div class="tv-show_body-name">Vụn Vỡ</div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/bac-si-cha-dr-cha-doctor-cha-jung-sook-2023-vietsub_1.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Chính Kịch , Neflix,Tâm Lí - Tình Cảm
+                        </div>
+                        <div class="tv-show_body-name">Bác Sĩ Cha</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/duoi-bong-mat-troi-in-the-shadow-of-the-sun-eclipse-of-the-heart-vietsub_1.jpeg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Hài Hước, Khác , Neflix,Tâm Lí - Tình Cảm
+                        </div>
+                        <div class="tv-show_body-name">Dưới Bóng Mặt Trời</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/huyen-mong-tinh-duyen-romance-beyond-romance-2023-vietsub_1.jpeg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Hài Hước , Neflix,Tâm Lí - Tình Cảm
+                        </div>
+                        <div class="tv-show_body-name">
+                          Huyễn Mộng Tình Duyên
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/46a76b61ec0247a4efe23c0c6d4dd6e6.webp"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Khác , Neflix,Tâm Lí - Tình Cảm
+                        </div>
+                        <div class="tv-show_body-name">Người Ấy Đã Đến</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col l-2">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2014
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/top-day/94518e257fe76cdf127b25bc2c41fdeb.webp"
+                            class="tv-show__poster--image top-day__poster--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">Hàn Quốc ,Hình Sự</div>
+                        <div class="tv-show_body-name">Bộ đôi siêu hạng</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col l-2">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/top-day/b741afb1db4a0a78789e1193ccbf8abd.webp"
+                            alt=""
+                            class="tv-show__poster--image top-day__poster--img"
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">Hài Hước,Neflix</div>
+                        <div class="tv-show_body-name">Nghề Siêu Dễ</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-le/ad6125d0a5ff11ea9b1649f51a9df8f8-300x450.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Kinh Dị,Kinh Dị-Ma ,Mỹ
+                        </div>
+                        <div class="tv-show_body-name">Lời Nguyền</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col l-2">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/top-day/bay-nnn-2-jpeg-4122-1644492964-6309-1647916490-300x450.jpg"
+                            class="tv-show__poster--image top-day__poster--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">Hàn Quốc,Neflix</div>
+                        <div class="tv-show_body-name">Bẫy Ngọt Ngào</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col l-2">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/top-day/bd4463760c30cea393ebf3c6ffe135f8.webp"
+                            class="tv-show__poster--image top-day__poster--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Châu Âu , Mỹ , Neflix
+                        </div>
+                        <div class="tv-show_body-name">
+                          Quá Nhanh Quá Nguy Hiểm 9: Huyền Thoại Tốc Độ
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/a_100532314_m_601_vi_260_360.webp"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Nhật Bản , Hành Động
+                        </div>
+                        <div class="tv-show_body-name">
+                          Thanh Gươm Diệt Quỷ: Làng Thợ Rèn
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div id="film-ott-list" class="row" style="display: none">
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-le/iy1Q3aT2URQWhX1YeEB243FHizV-300x450.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">Kinh Dị Mỹ Neflix</div>
+                        <div class="tv-show_body-name">Tách Biệt</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col l-2">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/top-day/122b1073657379353f0f5df7f844f005.webp"
+                            class="tv-show__poster--image top-day__poster--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">Khác Mỹ,Neflix</div>
+                        <div class="tv-show_body-name">
+                          Nguyên Tố Thứ 5 Nguyên Tố Thứ 5 Nguyên Tố Thứ 5
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-le/2pWKHp8TO8St69MuX4jFPgz17Rf-1-300x450.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">Bí Ẩn Mỹ Tội Phạm</div>
+                        <div class="tv-show_body-name">Thú Tính</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2022
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/8f630176384ebc897c70a8373739992c.webp"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Chính Kịch Khác , Neflix
+                        </div>
+                        <div class="tv-show_body-name">
+                          Thử Thách Thần Tượng (Running Man)
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list//pandora-phia-duoi-thien-duong-pandora-beneath-the-paradise-2023-vietsub_1.jpeg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Chính Kịch Khác , Neflix
+                        </div>
+                        <div class="tv-show_body-name">
+                          Pandora: Phía Dưới Thiên Đường
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2022
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-le/hpm_1665546188603.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">Kinh dị – Ma</div>
+                        <div class="tv-show_body-name">Hạnh Phúc Máu</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/mobile-suit-gundam-the-witch-from-mercury-season-2.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Chính Kịch Khác , Neflix,Mỹ
+                        </div>
+                        <div class="tv-show_body-name">
+                          Pháp Sư Đến Từ Sao Thủy (Phần 2)
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-le/xUvSeFhdsJbKFOaHnB9TeTZpJKs-300x450.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Anh,Lịch Sử ,Chính Kịch
+                        </div>
+                        <div class="tv-show_body-name">
+                          Cái Chết Của Bảy Vị Vua
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/Chuyen-Tinh-Khong-Dinh-Truoc-250x350-1.png"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Chính Kịch Khác , Neflix,Tâm Lí - Tình Cảm
+                        </div>
+                        <div class="tv-show_body-name">
+                          Chuyện Tình Không Định Trước
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/MV5BZDIzMTRlYzAtNmM2ZS00NzVhLWFhZmEtYTc1NjMyZTc1Yzg4XkEyXkFqcGdeQXVyNTkzNjEwMjI@._V1_FMjpg_UX1000_.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Hài Hước, Khác,Tâm Lí - Tình Cảm
+                        </div>
+                        <div class="tv-show_body-name">Ngọn Lửa Tham Vọng</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="more-view-item">
+                      <div class="more-view__poster">
+                        <a href="" class="more-view__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/more-view/2005fb31c0eb0f43c80e293fa9bf9e3a.webp"
+                            class="more-view__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="more-view__body">
+                        <div class="tv-show_body-desc">Canada Khoa Học</div>
+                        <div class="tv-show_body-name">Hồ Bơi Vô Cực</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="more-view-item">
+                      <div class="more-view__poster">
+                        <a href="" class="more-view__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/more-view/55cc84ecf2f926daf26221d7d662a9f0.webp"
+                            class="more-view__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="more-view__body">
+                        <div class="tv-show_body-desc">
+                          Chính Kịch Hàn Quốc Phiêu Lưu Tâm Lý – Tình Cảm
+                        </div>
+                        <div class="tv-show_body-name">JUNG_E</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="more-view-item">
+                      <div class="more-view__poster">
+                        <a href="" class="more-view__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/more-view/283a608ea7dcea650cd16efb78c4f814.webp"
+                            class="more-view__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="more-view__body">
+                        <div class="tv-show_body-desc">Khoa Học Mỹ Netflix</div>
+                        <div class="tv-show_body-name">Thung Lũng Kangaroo</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-le/5L3ZdfHBeDdDgYblbJDPNF0vuNP-300x450.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">Khác Mỹ,Neflix</div>
+                        <div class="tv-show_body-name">Vụn Vỡ</div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/bac-si-cha-dr-cha-doctor-cha-jung-sook-2023-vietsub_1.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Chính Kịch , Neflix,Tâm Lí - Tình Cảm
+                        </div>
+                        <div class="tv-show_body-name">Bác Sĩ Cha</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/duoi-bong-mat-troi-in-the-shadow-of-the-sun-eclipse-of-the-heart-vietsub_1.jpeg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Hài Hước, Khác , Neflix,Tâm Lí - Tình Cảm
+                        </div>
+                        <div class="tv-show_body-name">Dưới Bóng Mặt Trời</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/huyen-mong-tinh-duyen-romance-beyond-romance-2023-vietsub_1.jpeg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Hài Hước , Neflix,Tâm Lí - Tình Cảm
+                        </div>
+                        <div class="tv-show_body-name">
+                          Huyễn Mộng Tình Duyên
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/46a76b61ec0247a4efe23c0c6d4dd6e6.webp"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Khác , Neflix,Tâm Lí - Tình Cảm
+                        </div>
+                        <div class="tv-show_body-name">Người Ấy Đã Đến</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col l-2">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2014
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/top-day/94518e257fe76cdf127b25bc2c41fdeb.webp"
+                            class="tv-show__poster--image top-day__poster--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">Hàn Quốc ,Hình Sự</div>
+                        <div class="tv-show_body-name">Bộ đôi siêu hạng</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col l-2">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/top-day/b741afb1db4a0a78789e1193ccbf8abd.webp"
+                            alt=""
+                            class="tv-show__poster--image top-day__poster--img"
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">Hài Hước,Neflix</div>
+                        <div class="tv-show_body-name">Nghề Siêu Dễ</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-le/ad6125d0a5ff11ea9b1649f51a9df8f8-300x450.jpg"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Kinh Dị,Kinh Dị-Ma ,Mỹ
+                        </div>
+                        <div class="tv-show_body-name">Lời Nguyền</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col l-2">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/top-day/bay-nnn-2-jpeg-4122-1644492964-6309-1647916490-300x450.jpg"
+                            class="tv-show__poster--image top-day__poster--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">Hàn Quốc,Neflix</div>
+                        <div class="tv-show_body-name">Bẫy Ngọt Ngào</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col l-2">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/top-day/bd4463760c30cea393ebf3c6ffe135f8.webp"
+                            class="tv-show__poster--image top-day__poster--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Châu Âu , Mỹ , Neflix
+                        </div>
+                        <div class="tv-show_body-name">
+                          Quá Nhanh Quá Nguy Hiểm 9: Huyền Thoại Tốc Độ
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-2 col">
+                    <div class="film-list-item">
+                      <span class="year_update" style="z-index: 999">
+                        2023
+                      </span>
+                      <div class="tv-show__poster">
+                        <a href="" class="tv-show__link"
+                          ><img
+                            height="360"
+                            src="./assets/img/film-list/a_100532314_m_601_vi_260_360.webp"
+                            class="tv-show__poster--image film-le--img"
+                            alt=""
+                        /></a>
+                      </div>
+                      <a href="" class="tv-show__body">
+                        <div class="tv-show_body-desc">
+                          Nhật Bản , Hành Động
+                        </div>
+                        <div class="tv-show_body-name">
+                          Thanh Gươm Diệt Quỷ: Làng Thợ Rèn
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="page-control-1"
+                  class="page-control-bar-bottom"
+                  style="display: none"
+                >
                   <nav class="masvideos-pagination masvideos-movies-pagination">
                     <ul class="page-numbers">
                       <li>
@@ -2782,6 +5926,140 @@
                   </nav>
                 </div>
                 <div
+                  id="page-control-2"
+                  class="page-control-bar-bottom"
+                  style="display: none"
+                >
+                  <nav class="masvideos-pagination masvideos-movies-pagination">
+                    <ul class="page-numbers">
+                      <li>
+                        <span
+                          aria-current="page"
+                          class="page-number current active"
+                          >1</span
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="page-number"
+                          href="https://phimcoco.com/movies/page/2/"
+                          >2</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="page-number"
+                          href="https://phimcoco.com/movies/page/3/"
+                          >3</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="page-number"
+                          href="https://phimcoco.com/movies/page/4/"
+                          >4</a
+                        >
+                      </li>
+                      <li><span class="page-number dots">…</span></li>
+                      <li>
+                        <a
+                          class="page-number"
+                          href="https://phimcoco.com/movies/page/368/"
+                          >222</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="page-number"
+                          href="https://phimcoco.com/movies/page/369/"
+                          >223</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="page-number"
+                          href="https://phimcoco.com/movies/page/370/"
+                          >224</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="next page-number"
+                          href="https://phimcoco.com/movies/page/2/"
+                          >Sau &nbsp;&nbsp;&nbsp;→</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <div
+                  id="page-control-3"
+                  class="page-control-bar-bottom"
+                  style="display: none"
+                >
+                  <nav class="masvideos-pagination masvideos-movies-pagination">
+                    <ul class="page-numbers">
+                      <li>
+                        <span
+                          aria-current="page"
+                          class="page-number current active"
+                          >1</span
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="page-number"
+                          href="https://phimcoco.com/movies/page/2/"
+                          >2</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="page-number"
+                          href="https://phimcoco.com/movies/page/3/"
+                          >3</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="page-number"
+                          href="https://phimcoco.com/movies/page/4/"
+                          >4</a
+                        >
+                      </li>
+                      <li><span class="page-number dots">…</span></li>
+                      <li>
+                        <a
+                          class="page-number"
+                          href="https://phimcoco.com/movies/page/368/"
+                          >6</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="page-number"
+                          href="https://phimcoco.com/movies/page/369/"
+                          >7</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="page-number"
+                          href="https://phimcoco.com/movies/page/370/"
+                          >8</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="next page-number"
+                          href="https://phimcoco.com/movies/page/2/"
+                          >Sau &nbsp;&nbsp;&nbsp;→</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <div
                   style="clear: both; margin-top: 30px; margin-bottom: 15px"
                   c
                 >
@@ -2810,5 +6088,6 @@
         ></a>
       </footer>
     </div>
+    <script src="./assets/js/app.js"></script>
   </body>
 </html>
