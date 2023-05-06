@@ -15,6 +15,8 @@ catalogs.forEach((element) => {
   element.onclick = function (e) {
     switch (element.innerText) {
       case "Phim Lẻ": {
+        $("#feature-cate-page").style.display = "none";
+        $("#feature-cate-page").classList.add("hide");
         pageHome.style.display = "none";
         pageSub.style.display = "block";
         catalogName.innerHTML = element.innerText;
@@ -35,7 +37,6 @@ catalogs.forEach((element) => {
         $("#page-control-2").style.display = "none";
         $("#page-control-3").style.display = "none";
         $(".js-top-day").style.display = "block";
-        $("#feature-cate-page").style.display = "none";
         break;
       }
       case "Phim Bộ": {
@@ -59,6 +60,7 @@ catalogs.forEach((element) => {
         $("#page-control-3").style.display = "none";
         $(".js-top-day").style.display = "block";
         $("#feature-cate-page").style.display = "none";
+        $("#feature-cate-page").classList.add("hide");
 
         break;
       }
@@ -84,7 +86,7 @@ catalogs.forEach((element) => {
         $("#page-control-3").style.display = "block";
         $(".js-top-day").style.display = "block";
         $("#feature-cate-page").style.display = "none";
-
+        $("#feature-cate-page").classList.add("hide");
         break;
       }
       case "OTT": {
@@ -108,6 +110,8 @@ catalogs.forEach((element) => {
         $("#page-control-3").style.display = "block";
         $(".js-top-day").style.display = "none";
         $("#feature-cate-page").style.display = "block";
+        $("#feature-cate-page").classList.remove("hide");
+
         break;
       }
       default: {
