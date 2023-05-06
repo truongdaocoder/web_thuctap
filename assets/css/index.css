@@ -37,6 +37,11 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 0 38px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 .header__before {
   display: flex;
@@ -205,6 +210,9 @@ html {
   border-bottom: 12px solid #3b3939f1;
 }
 /*container*/
+.container {
+  margin-top: 83px;
+}
 #page-home {
   margin-bottom: 20px;
 }
@@ -768,6 +776,9 @@ html {
 .mt-top {
   margin-top: 20px;
 }
+.mt-right {
+  margin-right: 20px;
+}
 .masvideos-widget_movies_year_filter {
   list-style: none;
   display: flex;
@@ -939,9 +950,7 @@ ul.page-numbers > li > span,
   font-size: 2.5rem;
   color: #fff;
 }
-.ott_logo {
-  margin: 0 20px 0 0;
-}
+
 .embla2 {
   position: relative;
   max-width: 1170px;
