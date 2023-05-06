@@ -14,30 +14,6 @@ var currentIndex = 0;
 catalogs.forEach((element) => {
   element.onclick = function (e) {
     switch (element.innerText) {
-      case "Phim Bộ": {
-        pageHome.style.display = "none";
-        pageSub.style.display = "block";
-        catalogName.innerHTML = element.innerText;
-        $("#top-film-bo").style.display = "flex";
-        $("#top-film-le").style.display = "none";
-        $("#top-film-rap").style.display = "none";
-        $(".js-title-list").innerHTML = element.innerText;
-        $(".js-title-list").style.display = "block";
-        $(".page-header").style.display = "none";
-        $("#film-bo-list").style.display = "flex";
-        $("#film-le-list").style.display = "none";
-        $("#film-rap-list").style.display = "none";
-        $("#film-ott-list").style.display = "none";
-        $("#top-week-bo").style.display = "block";
-        $("#top-week-le").style.display = "none";
-        $("#page-control-1").style.display = "none";
-        $("#page-control-2").style.display = "block";
-        $("#page-control-3").style.display = "none";
-        $(".js-top-day").style.display = "block";
-        $("#feature-cate-page").style.display = "none";
-
-        break;
-      }
       case "Phim Lẻ": {
         pageHome.style.display = "none";
         pageSub.style.display = "block";
@@ -62,6 +38,31 @@ catalogs.forEach((element) => {
         $("#feature-cate-page").style.display = "none";
         break;
       }
+      case "Phim Bộ": {
+        pageHome.style.display = "none";
+        pageSub.style.display = "block";
+        catalogName.innerHTML = element.innerText;
+        $("#top-film-bo").style.display = "flex";
+        $("#top-film-le").style.display = "none";
+        $("#top-film-rap").style.display = "none";
+        $(".js-title-list").innerHTML = element.innerText;
+        $(".js-title-list").style.display = "block";
+        $(".page-header").style.display = "none";
+        $("#film-bo-list").style.display = "flex";
+        $("#film-le-list").style.display = "none";
+        $("#film-rap-list").style.display = "none";
+        $("#film-ott-list").style.display = "none";
+        $("#top-week-bo").style.display = "block";
+        $("#top-week-le").style.display = "none";
+        $("#page-control-1").style.display = "none";
+        $("#page-control-2").style.display = "block";
+        $("#page-control-3").style.display = "none";
+        $(".js-top-day").style.display = "block";
+        $("#feature-cate-page").style.display = "none";
+
+        break;
+      }
+
       case "Phim Chiếu Rạp": {
         pageHome.style.display = "none";
         pageSub.style.display = "block";
@@ -107,7 +108,6 @@ catalogs.forEach((element) => {
         $("#page-control-3").style.display = "block";
         $(".js-top-day").style.display = "none";
         $("#feature-cate-page").style.display = "block";
-
         break;
       }
       default: {
