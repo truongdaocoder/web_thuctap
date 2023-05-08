@@ -61,10 +61,8 @@ catalogs.forEach((element) => {
         $(".js-top-day").style.display = "block";
         $("#feature-cate-page").style.display = "none";
         $("#feature-cate-page").classList.add("hide");
-
         break;
       }
-
       case "Phim Chiếu Rạp": {
         pageHome.style.display = "none";
         pageSub.style.display = "block";
@@ -127,9 +125,9 @@ function change(a) {
       return;
     }
     if (currentIndex === 1) {
-      currentSlide += (slideContainer.offsetWidth * 70) / 100;
+      currentSlide += (762 * 70) / 100;
     } else {
-      currentSlide += (slideContainer.offsetWidth * 80) / 100;
+      currentSlide += (762 * 80) / 100;
     }
     slideContainer.style.transform = `translateX(${currentSlide}px)`;
     currentIndex--;
@@ -141,9 +139,9 @@ function change(a) {
   }
   if (a === -1) {
     if (currentIndex === 0 || currentIndex === slideItems.length - 2) {
-      currentSlide -= (slideContainer.offsetWidth * 70) / 100;
+      currentSlide -= (762 * 70) / 100;
     } else {
-      currentSlide -= (slideContainer.offsetWidth * 80) / 100;
+      currentSlide -= (762 * 80) / 100;
     }
     slideContainer.style.transform = `translateX(${currentSlide}px)`;
     currentIndex++;
